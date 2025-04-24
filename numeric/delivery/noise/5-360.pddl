@@ -1,0 +1,46 @@
+(define (problem delivery-x-1)
+	(:domain delivery)
+	(:objects
+		rooma roomb roomc - room
+		item4 item3 item2 item1 - item
+		bot1 bot2 - bot
+		left1 right1 left2 right2 - arm
+	)
+	(:init
+		(= (weight item4) 5.555727741716026)
+		(= (weight item3) -5.797266185766241)
+		(= (weight item2) 0.4311963998203645)
+		(= (weight item1) -4.456828382143098)
+		(at-bot bot1 rooma)
+		(at-bot bot2 rooma)
+		(free left1)
+		(free right1)
+		(free left2)
+		(free right2)
+		(mount left1 bot1)
+		(mount right1 bot1)
+		(mount left2 bot2)
+		(mount right2 bot2)
+		(at item4 rooma)
+		(at item3 rooma)
+		(at item2 rooma)
+		(at item1 rooma)
+		(door rooma roomb)
+		(door roomb rooma)
+		(door rooma roomc)
+		(door roomc rooma)
+		(= (current_load bot1) 0.0)
+		(= (load_limit bot1) 19.636936863534153)
+		(= (current_load bot2) 0.0)
+		(= (load_limit bot2) -12.328750525345164)
+		(= (cost) 0.0)
+	)
+	(:goal
+			(and
+				(at item4 roomb)
+				(at item3 roomb)
+				(at item2 roomc)
+				(at item1 roomc)
+			)
+	)
+)
