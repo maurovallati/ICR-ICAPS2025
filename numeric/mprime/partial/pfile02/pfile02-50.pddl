@@ -1,0 +1,43 @@
+(define (problem mprime-x-2)
+	(:domain mystery-prime-typed)
+	(:objects
+		beef onion tuna flounder cherry muffin ham - food
+		satiety stimulation curiosity entertainment - pleasure
+		anger depression prostatitis grief abrasion loneliness dread angina boils laceration sciatica hangover anxiety jealousy jealousy-2 depression-1 grief-7 dread-8 prostatitis-3 boils-4 - pain
+	)
+	(:init
+		(= (harmony curiosity) 2.0)
+		(eats onion cherry)
+		(craves jealousy flounder)
+		(eats ham muffin)
+		(craves laceration tuna)
+		(eats tuna flounder)
+		(craves hangover tuna)
+		(craves grief beef)
+		(craves dread-8 ham)
+		(craves satiety onion)
+		(craves loneliness onion)
+		(= (harmony entertainment) 3.0)
+		(craves depression-1 muffin)
+		(craves jealousy-2 cherry)
+		(craves curiosity cherry)
+		(craves anger beef)
+		(eats onion muffin)
+		(eats muffin ham)
+		(eats tuna ham)
+		(eats muffin onion)
+		(eats cherry onion)
+		(eats flounder tuna)
+		(eats cherry beef)
+		(eats cherry flounder)
+		(= (locale ham) 4.0)
+		(craves angina onion)
+		(= (locale cherry) 4.0)
+	)
+	(:goal
+			(and
+				(craves grief-7 beef)
+				(craves depression-1 beef)
+			)
+	)
+)

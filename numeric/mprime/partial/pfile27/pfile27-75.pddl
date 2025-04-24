@@ -1,0 +1,43 @@
+(define (problem mprime-x-27)
+	(:domain mystery-prime-typed)
+	(:objects
+		wurst guava muffin pork onion popover scallion - food
+		triumph love satisfaction - pleasure
+		abrasion anxiety dread loneliness grief boils - pain
+	)
+	(:init
+		(craves loneliness scallion)
+		(eats wurst onion)
+		(eats popover scallion)
+		(eats muffin pork)
+		(eats wurst guava)
+		(eats onion muffin)
+		(eats onion wurst)
+		(craves love popover)
+		(eats guava scallion)
+		(eats scallion muffin)
+		(craves abrasion wurst)
+		(eats pork onion)
+		(= (locale wurst) 10.0)
+		(eats scallion popover)
+		(eats pork muffin)
+		(craves boils scallion)
+		(= (locale guava) 9.0)
+		(eats onion popover)
+		(eats onion pork)
+		(= (locale pork) 5.0)
+		(craves anxiety wurst)
+		(= (harmony satisfaction) 2.0)
+		(= (locale scallion) 5.0)
+		(= (locale muffin) 2.0)
+		(craves satisfaction scallion)
+		(eats muffin onion)
+		(eats guava wurst)
+	)
+	(:goal
+			(and
+				(craves grief guava)
+				(craves boils guava)
+			)
+	)
+)

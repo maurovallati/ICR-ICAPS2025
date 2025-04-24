@@ -1,0 +1,42 @@
+(define (problem mprime-x-28)
+	(:domain mystery-prime-typed)
+	(:objects
+		wurst shrimp muffin broccoli lamb - food
+		intoxication - pleasure
+		loneliness anxiety hangover anger angina boils grief - pain
+	)
+	(:init
+		(craves angina muffin)
+		(= (locale broccoli) 7.0)
+		(eats broccoli muffin)
+		(eats muffin wurst)
+		(craves grief lamb)
+		(eats shrimp wurst)
+		(eats wurst muffin)
+		(craves boils broccoli)
+		(craves loneliness wurst)
+		(eats lamb shrimp)
+		(eats lamb wurst)
+		(= (locale lamb) 7.0)
+		(craves intoxication wurst)
+		(eats muffin broccoli)
+		(eats wurst lamb)
+		(eats shrimp lamb)
+		(eats broccoli lamb)
+		(craves anxiety shrimp)
+		(= (harmony intoxication) 2.0)
+		(craves hangover shrimp)
+		(= (locale wurst) 1.0)
+		(eats wurst shrimp)
+		(= (locale muffin) 2.0)
+		(= (locale shrimp) 6.0)
+		(eats lamb broccoli)
+		(craves anger muffin)
+	)
+	(:goal
+			(and
+				(craves anger lamb)
+				(craves boils lamb)
+			)
+	)
+)
