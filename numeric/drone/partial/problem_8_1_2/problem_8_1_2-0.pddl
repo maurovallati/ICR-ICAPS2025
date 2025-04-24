@@ -1,0 +1,31 @@
+(define (problem name)
+	(:domain drone)
+	(:objects
+		x0y0z0 x0y0z1 x1y0z0 x1y0z1 x2y0z0 x2y0z1 x3y0z0 x3y0z1 x4y0z0 x4y0z1 x5y0z0 x5y0z1 x6y0z0 x6y0z1 x7y0z0 x7y0z1 - location
+	)
+	(:init
+	)
+	(:goal
+			(and
+				(visited x0y0z0)
+				(visited x0y0z1)
+				(visited x1y0z0)
+				(visited x1y0z1)
+				(visited x2y0z0)
+				(visited x2y0z1)
+				(visited x3y0z0)
+				(visited x3y0z1)
+				(visited x4y0z0)
+				(visited x4y0z1)
+				(visited x5y0z0)
+				(visited x5y0z1)
+				(visited x6y0z0)
+				(visited x6y0z1)
+				(visited x7y0z0)
+				(visited x7y0z1)
+				(= (x) 0.0)
+				(= (y) 0.0)
+				(= (z) 0.0)
+			)
+	)
+)
